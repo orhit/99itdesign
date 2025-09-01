@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>99it - Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="app-container p-6 min-h-screen flex flex-col">
+
+  <header class="flex justify-between items-center mb-6">
+    <div class="flex items-center space-x-2">
+      <div class="bg-gray-200 w-10 h-10 rounded-full flex items-center justify-center font-bold">JD</div>
+      <div>
+        <p class="text-sm text-light-text">Welcome back,</p>
+        <p class="font-bold">John Doe</p>
+      </div>
+    </div>
+    <div class="flex items-center space-x-4">
+      <div class="flex items-center space-x-1">
+        <i class="fa-solid fa-coins text-accent-yellow"></i>
+        <span class="text-sm font-semibold">1250</span>
+      </div>
+      <div class="flex items-center space-x-1">
+        <i class="fa-solid fa-fire text-accent-yellow"></i>
+        <span class="text-sm font-semibold">7</span>
+      </div>
+      <div class="relative w-24 bg-gray-200 rounded-full h-2">
+        <div class="bg-primary h-2 rounded-full" style="width: 75%;"></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="flex-grow">
+    <h2 class="text-xl font-bold mb-4">Take a Quiz</h2>
+    <div class="grid grid-cols-2 gap-4 mb-6">
+      <a href="quiz-selection.html" class="bg-accent-blue text-white p-4 rounded-xl shadow-md gamified-card">
+        <i class="fa-solid fa-clock text-2xl mb-2"></i>
+        <p class="font-semibold text-sm">Timed Quiz</p>
+      </a>
+      <a href="quiz-selection.html" class="bg-accent-green text-white p-4 rounded-xl shadow-md gamified-card">
+        <i class="fa-solid fa-infinity text-2xl mb-2"></i>
+        <p class="font-semibold text-sm">Untimed Quiz</p>
+      </a>
+      <a href="battle.html" class="bg-accent-purple text-white p-4 rounded-xl shadow-md gamified-card">
+        <i class="fa-solid fa-swords text-2xl mb-2"></i>
+        <p class="font-semibold text-sm">Battle Quiz</p>
+      </a>
+      <a href="quiz-selection.html" class="bg-accent-yellow text-white p-4 rounded-xl shadow-md gamified-card">
+        <i class="fa-solid fa-calendar-day text-2xl mb-2"></i>
+        <p class="font-semibold text-sm">Daily Challenge</p>
+      </a>
+      <a href="quiz-selection.html" class="bg-primary text-white p-4 rounded-xl shadow-md col-span-2 gamified-card">
+        <p class="font-semibold text-sm">Full-Length Mock</p>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 mb-6">
+      <a href="leaderboard.html" class="bg-white p-4 rounded-xl shadow-md text-dark-text flex items-center justify-center flex-col gamified-card">
+        <i class="fa-solid fa-trophy text-2xl mb-2 text-yellow-500"></i>
+        <p class="font-semibold text-sm">Leaderboard</p>
+      </a>
+      <a href="progress.html" class="bg-white p-4 rounded-xl shadow-md text-dark-text flex items-center justify-center flex-col gamified-card">
+        <i class="fa-solid fa-chart-line text-2xl mb-2 text-green-500"></i>
+        <p class="font-semibold text-sm">My Progress</p>
+      </a>
+      <a href="community.html" class="bg-white p-4 rounded-xl shadow-md text-dark-text flex items-center justify-center flex-col gamified-card col-span-2">
+        <i class="fa-solid fa-users text-2xl mb-2 text-purple-500"></i>
+        <p class="font-semibold text-sm">Community Forum</p>
+      </a>
+    </div>
+
+    <div class="bg-white p-4 rounded-xl shadow-md flex items-center justify-between mb-6">
+      <div>
+        <p class="font-bold">Refer & Earn</p>
+        <p class="text-xs text-light-text">Invite friends and get rewarded!</p>
+      </div>
+      <button class="bg-primary text-white py-2 px-4 rounded-full text-sm font-semibold hover:bg-indigo-600">Invite</button>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
