@@ -3,50 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>99it - Landing</title>
+  <title>99it - Home</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-<div class="app-container relative p-6 min-h-screen flex flex-col justify-between">
+<div class="app-container p-6 min-h-screen flex flex-col">
 
-  <header class="flex justify-end p-4">
-    <a href="login.html" class="text-sm font-semibold text-primary nav-link">Login/Signup</a>
+  <!-- Header -->
+  <header class="flex justify-between items-center mb-6">
+    <h1 class="text-2xl font-bold text-primary">99it</h1>
+    <a href="login.html" class="text-sm text-dark-text">Login/Signup</a>
   </header>
 
-  <main class="flex-grow flex flex-col justify-center items-center text-center px-4">
-    <div class="text-4xl font-bold mb-4">99it</div>
-    <h1 class="text-2xl font-bold mb-4">Revolutionizing JEE & NEET Prep with Quizzes.</h1>
-    <p class="text-lg text-light-text mb-8">Master your exams with fun, interactive, and gamified quizzes. Challenge friends and track your progress!</p>
-    <a href="login.html" class="bg-primary text-white font-bold py-4 px-10 rounded-full shadow-lg hover:bg-indigo-600 transition-all transform hover:scale-105">Try Now</a>
-  </main>
+  <!-- Hero -->
+  <main class="flex-grow text-center">
+    <h2 class="text-xl font-bold mb-2">Revolutionizing JEE & NEET Prep with Quizzes.</h2>
+    <p class="text-sm text-light-text mb-6">
+      Master your exams with fun, interactive, and gamified quizzes. <br>
+      Challenge friends and track your progress!
+    </p>
 
-  <section class="mt-8">
-    <h2 class="text-xl font-bold mb-4 text-center">Quiz Types</h2>
+    <!-- CTA -->
+    <a href="quiz-selection.html" class="bg-primary text-white px-6 py-3 rounded-full shadow-md mb-8 inline-block">
+      Get Started
+    </a>
+
+    <!-- Quiz Types -->
+    <h3 class="text-lg font-semibold mb-4">Quiz Types</h3>
     <div class="grid grid-cols-2 gap-4">
-      <div class="gamified-card from-accent-blue to-primary text-white p-4 rounded-xl shadow-md">
-        <i class="fa-solid fa-clock text-2xl mb-2"></i>
-        <p class="font-semibold text-sm">Timed Quiz</p>
+      <div class="bg-white p-6 rounded-xl shadow-md gamified-card flex flex-col items-center">
+        <i class="fa-solid fa-atom text-2xl text-accent-purple mb-2"></i>
+        <span class="font-semibold">Physics</span>
       </div>
-      <div class="gamified-card from-accent-green to-teal-500 text-white p-4 rounded-xl shadow-md">
-        <i class="fa-solid fa-infinity text-2xl mb-2"></i>
-        <p class="font-semibold text-sm">Untimed Quiz</p>
+      <div class="bg-white p-6 rounded-xl shadow-md gamified-card flex flex-col items-center">
+        <i class="fa-solid fa-flask text-2xl text-accent-green mb-2"></i>
+        <span class="font-semibold">Chemistry</span>
       </div>
-      <div class="gamified-card from-accent-purple to-pink-500 text-white p-4 rounded-xl shadow-md">
-        <i class="fa-solid fa-swords text-2xl mb-2"></i>
-        <p class="font-semibold text-sm">Battle Quiz</p>
+      <div class="bg-white p-6 rounded-xl shadow-md gamified-card flex flex-col items-center">
+        <i class="fa-solid fa-square-root-variable text-2xl text-accent-blue mb-2"></i>
+        <span class="font-semibold">Mathematics</span>
       </div>
-      <div class="gamified-card from-accent-yellow to-orange-500 text-white p-4 rounded-xl shadow-md">
-        <i class="fa-solid fa-calendar-day text-2xl mb-2"></i>
-        <p class="font-semibold text-sm">Daily Challenge</p>
+      <div class="bg-white p-6 rounded-xl shadow-md gamified-card flex flex-col items-center">
+        <i class="fa-solid fa-dna text-2xl text-accent-yellow mb-2"></i>
+        <span class="font-semibold">Biology</span>
       </div>
     </div>
-  </section>
-
-  <footer class="text-center text-sm text-light-text mt-8 p-4">
-    &copy; 2024 99it. All rights reserved.
-  </footer>
+  </main>
 
 </div>
 </body>
